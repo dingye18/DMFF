@@ -21,6 +21,7 @@ LINK_DIRECTORIES("${CPPFLOW_DIR}/lib")
 # Include the tensorflow
 SET(TENSORFLOW_DIR "/usr/local/tensorflow/" CACHE PATH "Where libtensorflow is installed")
 INCLUDE_DIRECTORIES("${TENSORFLOW_DIR}/include")
+INCLUDE_DIRECTORIES("${TENSORFLOW_DIR}/include/tensorflow/third_party/xla")
 LINK_DIRECTORIES("${TENSORFLOW_DIR}/lib")
 
 # Specify the C++ version we are building for.
